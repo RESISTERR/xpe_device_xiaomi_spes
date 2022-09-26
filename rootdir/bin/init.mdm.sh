@@ -27,8 +27,21 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+<<<<<<< HEAD:rootdir/bin/init.mdm.sh
 baseband=`getprop ro.baseband`
 if [ "$baseband" = "mdm" ] || [ "$baseband" = "mdm2" ]; then
 	start vendor.mdm_helper
 fi
+=======
+# fingerprint
+/sys/devices/platform/soc/soc:fpc1020* fingerdown_wait 0220 system system
+/dev/goodix_fp            0660   system     system
+
+#qvr
+/sys/kernel/qvr_external_sensor fd  0660  system  system
+
+# wlan
+/dev/spidev0.1            0660   system	    system
+/dev/hw_random            0600   root       root
+>>>>>>> 2eecbf48... surya: hidl: Switch to common Xiaomi fingerprint HIDL:init/ueventd.surya.rc
 
