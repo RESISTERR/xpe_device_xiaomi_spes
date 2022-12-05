@@ -408,6 +408,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libqti-perfd-client
 
+# Platform
+TARGET_BOARD_PLATFORM := bengal
+TARGET_USES_AOSP_NFC := true
+TARGET_HAS_DOLBY_VISION := true
+TARGET_USES_CUSTOM_SF_OFFSETS := true
+TARGET_COMMON_QTI_COMPONENTS := \
+    adreno \
+    audio \
+    telephony \
+    perf \
+    wfd
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.3.vendor \
@@ -519,6 +531,13 @@ PRODUCT_COPY_FILES += \
 
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
+
+# Vulkan
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.vulkan.compute-0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.compute.xml \
+    frameworks/native/data/etc/android.software.vulkan.deqp.level-2021-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
+    frameworks/native/data/etc/android.hardware.vulkan.level-1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level.xml \
+    frameworks/native/data/etc/android.hardware.vulkan.version-1_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version.xml
 
 # WiFi
 PRODUCT_PACKAGES += \
