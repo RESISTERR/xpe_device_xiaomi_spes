@@ -411,14 +411,9 @@ PRODUCT_PACKAGES += \
 # Platform
 TARGET_BOARD_PLATFORM := bengal
 TARGET_USES_AOSP_NFC := true
-TARGET_HAS_DOLBY_VISION := true
-TARGET_USES_CUSTOM_SF_OFFSETS := true
 TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
-    audio \
-    telephony \
-    perf \
-    wfd
+    perf
 
 # Power
 PRODUCT_PACKAGES += \

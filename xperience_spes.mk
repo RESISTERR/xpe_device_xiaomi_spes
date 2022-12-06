@@ -18,7 +18,7 @@ TARGET_SUPPORTS_QUICK_TAP := true
 WITH_GMS := true
 
 # Product Specifics
-PRODUCT_NAME := xperince_spes
+PRODUCT_NAME := xperience_spes
 PRODUCT_DEVICE := spes
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 11

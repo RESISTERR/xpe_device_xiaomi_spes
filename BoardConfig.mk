@@ -5,7 +5,6 @@
 #
 
 DEVICE_PATH := device/xiaomi/spes
-COMMON_PATH := device/qcom/common
 
 # A/B
 AB_OTA_UPDATER := true
