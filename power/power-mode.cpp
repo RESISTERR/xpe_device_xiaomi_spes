@@ -54,18 +54,10 @@ int open_ts_input() {
 }  // anonymous namespace
 
 namespace aidl {
-<<<<<<< HEAD
-namespace google {
-namespace hardware {
-namespace power {
-namespace impl {
-namespace pixel {
-=======
 namespace android {
 namespace hardware {
 namespace power {
 namespace impl {
->>>>>>> c3a4573f... spes: Revert back stock QCOM Power HAL
 
 static constexpr int kInputEventWakeupModeOff = 4;
 static constexpr int kInputEventWakeupModeOn = 5;
@@ -104,17 +96,8 @@ bool setDeviceSpecificMode(Mode type, bool enabled) {
     }
 }
 
-<<<<<<< HEAD
-}  // namespace pixel
-}  // namespace impl
-}  // namespace power
-}  // namespace hardware
-}  // namespace google
-}  // namespace aidl
-=======
 }  // namespace impl
 }  // namespace power
 }  // namespace hardware
 }  // namespace android
 }  // namespace aidl
->>>>>>> c3a4573f... spes: Revert back stock QCOM Power HAL
