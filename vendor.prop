@@ -63,7 +63,6 @@ vendor.audio.use.sw.mpegh.decoder=true
 vendor.audio.volume.headset.gain.depcal=true
 vendor.audio_hal.in_period_size=144
 vendor.audio_hal.period_multiplier=3
-vendor.audio_hal.period_size=192
 vendor.voice.path.for.pcm.voip=true
 
 # Bluetooth
@@ -194,7 +193,6 @@ persist.sys.oem.otg_support=true
 # PERF
 ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.perf-hal.ver=2.2
-ro.vendor.perf.scroll_opt=1
 
 # Radio
 persist.radio.multisim.config=dsds
